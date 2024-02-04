@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Calculator</title>
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Game Calculator</h1>
+        <form id="calculatorForm">
+            <label for="firstInput">Enter the first number (1, 2, or 3):</label>
+            <input type="number" id="firstInput" required>
+
+            <label for="inputValues">Enter values for A to G (comma-separated):</label>
+            <input type="text" id="inputValues" required>
+
+            <button type="button" onclick="calculateResult()">Calculate</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
