@@ -1,11 +1,10 @@
 body {
-      /* Set the background image and define its properties */
-  background-image: url("AdobeStock_427226621.jpeg"); /* Replace 'path/to/your/photo.jpg' with the actual path to your photo */
-  background-size: cover; /* Cover the entire viewport */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  height: 100vh; /* Set the body height to 100% of the viewport height */
-  margin: 0; /* Remove default margin */
+  background-image: url("AdobeStock_427226621.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
   font-family: 'Arial', sans-serif;
   padding: 0;
   display: flex;
@@ -17,13 +16,12 @@ body {
 }
 
 .calculator-container {
-  position: relative;
-  right: 200px;
+  width: 90%; /* Adjust the width for better responsiveness */
+  max-width: 400px; /* Set a maximum width to avoid stretching on larger screens */
   background-color: #88eff7;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
   border-radius: 30px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 label {
@@ -32,29 +30,19 @@ label {
 }
 
 input {
-  font-size:large;
+  font-size: large;
   padding: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Adjust the margin for a cleaner look */
   border-radius: 10px;
   border: none;
-}
-/*input:hover::placeholder {
-  color: red;
-  content: "Enter something..."; 
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-input::placeholder {
-  color: rgb(185, 46, 46);
-}*/
 button {
   background-color: #212266;
   font-size: 20px;
   color: #fff;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
+  padding: 10px 20px; /* Adjust padding for a cleaner button */
   margin-left: 20px;
   border: none;
   border-radius: 20px;
@@ -65,7 +53,7 @@ button:hover {
   background-color: rgb(11, 37, 70);
 }
 
-.results{
+.results {
   margin-top: 1%;
   font-weight: bold;
 }
