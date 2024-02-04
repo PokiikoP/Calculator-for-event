@@ -17,7 +17,7 @@ function calculateResult() {
     const multipliers = {
         1: [540, 270, 180, 135, 27, 27, 18],
         2: [360, 180, 120, 90, 18, 18, 12],
-        3: [270, 45, 90, 27, 9, 9, 6]  // Adjusted the order of multipliers
+        3: [270, 90, 45, 27, 9, 9, 6]
     };
 
     // Log multipliers to console for debugging
