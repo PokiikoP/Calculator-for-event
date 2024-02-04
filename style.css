@@ -1,6 +1,6 @@
 body {
       /* Set the background image and define its properties */
-  background-image: url("https://as1.ftcdn.net/v2/jpg/04/27/22/66/1000_F_427226621_Fg5l5mP0fQnwiitaVJd6MSAMWn2EjITo.jpg"); /* Replace 'path/to/your/photo.jpg' with the actual path to your photo */
+  background-image: url("AdobeStock_427226621.jpeg"); /* Replace 'path/to/your/photo.jpg' with the actual path to your photo */
   background-size: cover; /* Cover the entire viewport */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
