@@ -38,14 +38,7 @@ input {
   border-radius: 10px;
   border: none;
 }
-/*input:hover::placeholder {
-  color: red;
-  content: "Enter something..."; 
-}
 
-input::placeholder {
-  color: rgb(185, 46, 46);
-}*/
 button {
   background-color: #212266;
   font-size: 20px;
