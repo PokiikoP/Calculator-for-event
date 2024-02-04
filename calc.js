@@ -15,9 +15,9 @@ function calculateResult() {
 
   // Multipliers based on the user's chosen format
   const multipliers = {
-      1: [540, 270, 180, 135, 27, 27, 18],
+      3: [540, 270, 180, 135, 27, 27, 18],
       2: [360, 180, 120, 90, 18, 18, 12],
-      3: [270, 90, 45, 27, 9, 9, 6]
+      1: [270, 90, 45, 27, 9, 9, 6]
   };
 
   // Log multipliers to console for debugging
