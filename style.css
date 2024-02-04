@@ -1,44 +1,71 @@
 body {
+      /* Set the background image and define its properties */
+  background-image: url("AdobeStock_427226621.jpeg"); /* Replace 'path/to/your/photo.jpg' with the actual path to your photo */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 100vh; /* Set the body height to 100% of the viewport height */
+  margin: 0; /* Remove default margin */
   font-family: 'Arial', sans-serif;
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f4f4f4;
+  color: rgb(12, 39, 71);
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .calculator-container {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  right: 200px;
+  background-color: #88eff7;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border-radius: 30px;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
   margin-bottom: 10px;
 }
 
-button {
-  background-color: #4caf50;
-  color: #fff;
+input {
+  font-size:large;
   padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
   border: none;
+}
+/*input:hover::placeholder {
+  color: red;
+  content: "Enter something..."; 
+}
+
+input::placeholder {
+  color: rgb(185, 46, 46);
+}*/
+button {
+  background-color: #212266;
+  font-size: 20px;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  margin-left: 20px;
+  border: none;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: rgb(11, 37, 70);
 }
 
-#result {
-  margin-top: 20px;
+.results{
+  margin-top: 1%;
   font-weight: bold;
 }
