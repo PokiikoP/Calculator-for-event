@@ -9,18 +9,20 @@
 <body>
 
     <div class="calculator-container">
-        <h1>Game Calculator</h1>
+        <h1>Ticket Profit/Loss Calculator</h1>
         <form id="calculatorForm">
-            <label for="firstInput">Enter the first number (3, 2, or 1):</label>
-            <input type="number" id="firstInput" required>
+            <label for="firstInput">Enter the slot type (1, 2, 3):</label>
+            <input type="number" id="firstInput" required placeholder="">
 
             <label for="inputValues">Enter values for A to G (comma-separated):</label>
-            <input type="text" id="inputValues" required>
+            <input type="text" id="inputValues" required placeholder="">
 
-            <button type="button" onclick="calculateResult()">Calculate</button>
+            <button type="button" onclick="calculateResult()" >Calculate</button>
         </form>
 
-        <div id="result"></div>
+        <div id="totaltickets" class="results"></div>
+        <div id="result" class="results"></div>
+        <div id="resultper" class="results"></div>
     </div>
 
     <script src="calc.js"></script>
