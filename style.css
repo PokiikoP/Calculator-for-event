@@ -12,45 +12,52 @@ body {
   justify-content: center;
   align-items: center;
   color: rgb(12, 39, 71);
-  font-size: 19px;
+  font-size: 19em;
   font-weight: bold;
 }
 
 .calculator-container {
   position: relative;
-  right: 200px;
+  right: 200em;
   background-color: #88eff7;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  border-radius: 30px;
+  padding-left: 30em;
+  padding-right: 30em;
+  padding-bottom: 30em;
+  border-radius: 30em;
 }
 
 label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 10em;
 }
 
 input {
   font-size:large;
-  padding: 10px;
-  margin-bottom: 30px;
-  border-radius: 10px;
+  padding: 10em;
+  margin-bottom: 30em;
+  border-radius: 10em;
   border: none;
 }
+/*input:hover::placeholder {
+  color: red;
+  content: "Enter something..."; 
+}
 
+input::placeholder {
+  color: rgb(185, 46, 46);
+}*/
 button {
   background-color: #212266;
-  font-size: 20px;
+  font-size: 20em;
   color: #fff;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 20em;
+  padding-right: 20em;
+  padding-top: 10em;
+  padding-bottom: 10em;
 
-  margin-left: 20px;
+  margin-left: 20em;
   border: none;
-  border-radius: 20px;
+  border-radius: 20em;
   cursor: pointer;
 }
 
