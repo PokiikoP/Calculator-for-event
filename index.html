@@ -26,18 +26,20 @@
     </div>
 
     <script src="calc.js"></script>
-        <script>
+    <script>
       function validateInput() {
-        let input = document.getElementById('firstInput');
-        let minValue = parseInt(input.min, 10);
-        let maxValue = parseInt(input.max, 10);
-        let enteredValue = parseInt(input.value, 10);
-
-        // Check if the entered value is within the specified range
-        if (enteredValue < minValue || enteredValue > maxValue) {
-          alert(`Please enter a value between ${minValue} and ${maxValue}`);
-          input.value = ''; // Clear the invalid value
-        }
+          let input = document.getElementById('firstInput');
+          let minValue = parseInt(input.min, 10);
+          let maxValue = parseInt(input.max, 10);
+          let enteredValue = parseFloat(input.value);
+  
+          // Check if the entered value is within the specified range
+          if (!isNaN(enteredValue) && Number.isInteger(enteredValue) && enteredValue >= minValue && enteredValue <= maxValue) {
+              return;
+          } else {
+              alert(`Please enter a valid whole number between ${minValue} and ${maxValue}`);
+              input.value = ''; // Clear the invalid value
+          }
       }
     </script>
 </body>
