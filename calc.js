@@ -45,7 +45,7 @@ function calculateResult() {
     document.getElementById('result').innerHTML = `The Amount of tickets you roughly make from this deal is ${Math.abs(netvalue)}.`;
     document.getElementById('resultper').innerHTML = `Essentially a profit of roughly ${percent}%`;
   }
-  else if (netvalue<0){
+  else{
     document.getElementById('result').innerHTML = `The Amount of tickets you roughly lose from this deal is ${Math.abs(netvalue)}.`;
     document.getElementById('resultper').innerHTML = `Essentially a loss of roughly ${percent}%`;
 
