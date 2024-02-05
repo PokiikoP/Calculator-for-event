@@ -2,6 +2,7 @@ function calculateResult() {
   // Get user inputs
   const format = parseInt(document.getElementById('firstInput').value);
 
+  
   // Validate input for A to G values
   const inputValues = document.getElementById('inputValues').value;
   const values = inputValues.split(',').map(value => {
@@ -12,7 +13,8 @@ function calculateResult() {
   const multipliers = {
       1: [270, 90, 45, 27, 9, 9, 6], 
       2: [360, 180, 120, 90, 18, 18, 12],
-      3: [540, 270, 180, 135, 27, 27, 18] 
+      3: [540, 270, 180, 135, 27, 27, 18],
+      4: [360, 120, 60, 36, 9, 9, 6]
   };
 
   // Multiply and sum the values
@@ -27,7 +29,12 @@ function calculateResult() {
   }, 0);
   // Divide the result by 30
   const finalResult = result / 30;
-  totaltickets=format*totaltickets;
+  if (format>1 && format === 4){
+    totaltickets=totaltickets;
+  }
+  else {
+    totaltickets=format*totaltickets;
+  }
   const netvalue = Math.round(finalResult-totaltickets);
   const percent = Math.round(Math.abs((netvalue/totaltickets)*100));
 
